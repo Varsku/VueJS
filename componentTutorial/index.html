@@ -1,0 +1,17 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+    <server-status></server-status> <!-- Lokaali itse tehty komponentti, löytyy app.js tiedostosta tätä voi käyttää vain "app" id:llä olevassa divissä-->
+    <hr>
+    <server-status2></server-status2> <!--Globaali komponentti, voidaan kutsua missä vain. Toimii molemmissa diveissä-->
+
+</div>
+
+<div id="app2">
+    <server-status></server-status> <!--Lokaali komponentti ei näy "app2" id:llä olevassa divissä-->
+    <hr>
+    <server-status2></server-status2>
+</div>
+
+
+<script src="./app.js"></script>
